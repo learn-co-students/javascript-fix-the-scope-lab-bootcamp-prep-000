@@ -19,11 +19,12 @@ function add2(n) {
   return n + two
 }
 
-var funkyFunction = function() { // funkyFunction
-  return function() { // funkyFunction()
-    return "FUNKY!" // funkyFunction()()
+var funkyFunction = function() {
+  return function() {
+    return "FUNKY!"
   }
 }
 
-// We want this to return "FUNKY!" -- how can we accomplish that?
+// We want to set theFunk equal to "FUNKY!" using our funkyFunction.
+// NOTE: you only need to modify the code below this line.
 var theFunk = funkyFunction()()
