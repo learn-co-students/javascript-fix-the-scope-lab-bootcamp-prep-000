@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 7,
+    "passes": 4,
+    "pending": 0,
+    "failures": 3,
+    "start": "2016-05-05T17:04:01.360Z",
+    "end": "2016-05-05T17:04:01.981Z",
+    "duration": 621
+  },
+  "tests": [
+    {
+      "title": "returns my animal",
+      "fullTitle": "index myAnimal() returns my animal",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns your animal",
+      "fullTitle": "index yourAnimal() returns your animal",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'dog' to equal 'cat'",
+        "showDiff": true,
+        "actual": "dog",
+        "expected": "cat",
+        "stack": "AssertionError: expected 'dog' to equal 'cat'\n    at Context.it (test/index-test.js:23:31)"
+      }
+    },
+    {
+      "title": "does not hard-code the answer",
+      "fullTitle": "index yourAnimal() does not hard-code the answer",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "adds two to n",
+      "fullTitle": "index add2(n) adds two to n",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: two is not defined\n    at add2 (about:blank:15:14)\n    at Context.it (test/index-test.js:34:14)",
+        "message": "two is not defined"
+      }
+    },
+    {
+      "title": "returns a function",
+      "fullTitle": "index funkyFunction() returns a function",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "is \"FUNKY!\"",
+      "fullTitle": "index theFunk is \"FUNKY!\"",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected [Function] to equal 'FUNKY!'",
+        "showDiff": true,
+        "expected": "FUNKY!",
+        "stack": "AssertionError: expected [Function] to equal 'FUNKY!'\n    at Context.it (test/index-test.js:46:26)"
+      }
+    },
+    {
+      "title": "does not hard-code the answer",
+      "fullTitle": "index theFunk does not hard-code the answer",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "returns your animal",
+      "fullTitle": "index yourAnimal() returns your animal",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'dog' to equal 'cat'",
+        "showDiff": true,
+        "actual": "dog",
+        "expected": "cat",
+        "stack": "AssertionError: expected 'dog' to equal 'cat'\n    at Context.it (test/index-test.js:23:31)"
+      }
+    },
+    {
+      "title": "adds two to n",
+      "fullTitle": "index add2(n) adds two to n",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: two is not defined\n    at add2 (about:blank:15:14)\n    at Context.it (test/index-test.js:34:14)",
+        "message": "two is not defined"
+      }
+    },
+    {
+      "title": "is \"FUNKY!\"",
+      "fullTitle": "index theFunk is \"FUNKY!\"",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected [Function] to equal 'FUNKY!'",
+        "showDiff": true,
+        "expected": "FUNKY!",
+        "stack": "AssertionError: expected [Function] to equal 'FUNKY!'\n    at Context.it (test/index-test.js:46:26)"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "returns my animal",
+      "fullTitle": "index myAnimal() returns my animal",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "does not hard-code the answer",
+      "fullTitle": "index yourAnimal() does not hard-code the answer",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns a function",
+      "fullTitle": "index funkyFunction() returns a function",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "does not hard-code the answer",
+      "fullTitle": "index theFunk does not hard-code the answer",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
