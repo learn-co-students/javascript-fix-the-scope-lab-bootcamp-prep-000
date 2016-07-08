@@ -43,7 +43,7 @@ describe('index', () => {
 
   describe('theFunk', () => {
     it('is "FUNKY!"', () => {
-      expect(theFunk).to.equal('FUNKY!')
+      expect(theFunk()).to.equal('FUNKY!')
     })
 
     it('does not hard-code the answer', () => {
