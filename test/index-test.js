@@ -12,9 +12,11 @@ describe('Fix the Scope', function() {
       expect(window.yourAnimal()).toEqual('cat')
     })
 
+
     it('does not hard-code the answer', function() {
       expect(window.yourAnimal.toString()).toNotContain("return 'cat'")
     })
+
   })
 
   describe('add2(n)', function() {
@@ -24,16 +26,29 @@ describe('Fix the Scope', function() {
     })
   })
 
+<<<<<<< HEAD
   describe('funkyFunction()', function() {
     it('returns a function', function() {
       expect(typeof window.funkyFunction()).toEqual('function')
     })
+=======
+describe('funkyFunction()', function() {
+  it('returns a function', function() {
+    expect(typeof funkyFunction()).toEqual('function')
+>>>>>>> Fix solution
   })
 
+<<<<<<< HEAD
   describe('theFunk', function() {
     it('is "FUNKY!"', function() {
       expect(window.theFunk).toEqual('FUNKY!')
     })
   })
 
+=======
+describe('theFunk', function() {
+  it('is "FUNKY!"', function() {
+    expect(theFunk).toEqual('FUNKY!')
+  })
+>>>>>>> Fix solution
 })
