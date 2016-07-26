@@ -12,7 +12,7 @@ describe('yourAnimal()', function() {
   })
 
   it('does not hard-code the answer', function() {
-    expect(yourAnimal.toString()).not.to.contain("return 'cat'")
+    expect(yourAnimal.toString()).toNotContain("return 'cat'")
   })
 })
 
@@ -25,16 +25,12 @@ describe('add2(n)', function() {
 
 describe('funkyFunction()', function() {
   it('returns a function', function() {
-    expect(funkyFunction()).to.be.a('function')
+    expect(typeof funkyFunction()).toEqual('function')
   })
 })
 
 describe('theFunk', function() {
   it('is "FUNKY!"', function() {
-    expect(theFunk()).toEqual('FUNKY!')
-  })
-
-  it('does not hard-code the answer', function() {
-    expect(file).to.contain('var theFunk = funkyFunction()')
+    expect(theFunk).toEqual('FUNKY!')
   })
 })
