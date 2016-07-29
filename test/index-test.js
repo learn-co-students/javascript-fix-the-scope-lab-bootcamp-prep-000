@@ -1,5 +1,9 @@
 /*global describe, it */
 
+const fs = require('fs');
+const path = require('path');
+const file = fs.readFileSync(path.resolve(__dirname, '..', 'index.js'), 'utf-8');
+
 describe('myAnimal()', function() {
   it('returns my animal', () => {
     expect(myAnimal()).toEqual('dog')
@@ -12,7 +16,7 @@ describe('yourAnimal()', function() {
   })
 
   it('does not hard-code the answer', function() {
-    expect(yourAnimal.toString()).not.to.contain("return 'cat'")
+    expect(yourAnimal.toString()).toNotContain("return 'cat'")
   })
 })
 
@@ -25,16 +29,16 @@ describe('add2(n)', function() {
 
 describe('funkyFunction()', function() {
   it('returns a function', function() {
-    expect(funkyFunction()).to.be.a('function')
+    expect(typeof funkyFunction()).toEqual('function')
   })
 })
 
 describe('theFunk', function() {
   it('is "FUNKY!"', function() {
-    expect(theFunk()).toEqual('FUNKY!')
+    expect(theFunk).toEqual('FUNKY!')
   })
 
   it('does not hard-code the answer', function() {
-    expect(file).to.contain('var theFunk = funkyFunction()')
+    expect(file).toContain('var theFunk = funkyFunction()')
   })
 })
