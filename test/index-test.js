@@ -1,36 +1,38 @@
 /*global describe, it */
 
-describe('myAnimal()', function() {
-  it('returns my animal', () => {
-    expect(myAnimal()).toEqual('dog')
-  })
-})
-
-describe('yourAnimal()', function() {
-  it('returns your animal', function(){
-    expect(yourAnimal()).toEqual('cat')
+describe('Fix the Scope', function() {
+  describe('myAnimal()', function() {
+    it('returns my animal', () => {
+      expect(myAnimal()).toEqual('dog')
+    })
   })
 
-  it('does not hard-code the answer', function() {
-    expect(yourAnimal.toString()).toNotContain("return 'cat'")
-  })
-})
+  describe('yourAnimal()', function() {
+    it('returns your animal', function(){
+      expect(yourAnimal()).toEqual('cat')
+    })
 
-describe('add2(n)', function() {
-  it('adds two to n', function() {
-    const n = Math.floor(Math.random() * 1000)
-    expect(add2(n)).toEqual(n + 2)
+    it('does not hard-code the answer', function() {
+      expect(yourAnimal.toString()).toNotContain("return 'cat'")
+    })
   })
-})
 
-describe('funkyFunction()', function() {
-  it('returns a function', function() {
-    expect(typeof funkyFunction()).toEqual('function')
+  describe('add2(n)', function() {
+    it('adds two to n', function() {
+      const n = Math.floor(Math.random() * 1000)
+      expect(add2(n)).toEqual(n + 2)
+    })
   })
-})
 
-describe('theFunk', function() {
-  it('is "FUNKY!"', function() {
-    expect(theFunk).toEqual('FUNKY!')
+  describe('funkyFunction()', function() {
+    it('returns a function', function() {
+      expect(typeof funkyFunction()).toEqual('function')
+    })
+  })
+
+  describe('theFunk', function() {
+    it('is "FUNKY!"', function() {
+      expect(theFunk).toEqual('FUNKY!')
+    })
   })
 })
