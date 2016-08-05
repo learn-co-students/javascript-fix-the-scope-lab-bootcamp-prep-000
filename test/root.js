@@ -10,18 +10,13 @@ before(function(done) {
     presets: ['es2015']
   });
 
-  const html = path.resolve(__dirname, '..', 'index.html');
 
-  jsdom.env(html, [], {
-    src: babelResult.code,
-    virtualConsole: jsdom.createVirtualConsole().sendTo(console)
-  }, (err, window) => {
-    if (err) {
-      return done(err);
-    }
+  const html = path.resolve(__dirname, '..', 'index.html')
 
-    global.window = window;
+  jsdom.env(html, [], {src: babelResult.code}, (err, window) => {
+    global.window = window
 
-    return done();
+
+    return done(err);
   });
 });
