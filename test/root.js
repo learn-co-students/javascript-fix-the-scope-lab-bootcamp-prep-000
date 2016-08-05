@@ -10,15 +10,11 @@ before(function(done) {
     presets: ['es2015']
   });
 
-  jsdom.env('<div></div>', [], {src: babelResult.code}, (err, window) => {
-    if (err) {
-      return done(err);
-    }
+  const html = path.resolve(__dirname, '..', 'index.html')
 
-    Object.keys(window).forEach(key => {
-      global[key] = window[key];
-    });
+  jsdom.env(html, [], {src: babelResult.code}, (err, window) => {
+    global.window = window
 
-    return done();
+    return done(err);
   });
 });
