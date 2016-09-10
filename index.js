@@ -25,5 +25,6 @@ var funkyFunction = function() {
   return result
 }
 // We want this to return a function that returns "FUNKY!" -- how can we accomplish that?
-var outerFunction = funkyFunction();
-var theFunk = outerFunction();
+// var outerFunction = funkyFunction();
+// var theFunk = outerFunction();
+var theFunk = funkyFunction()();
