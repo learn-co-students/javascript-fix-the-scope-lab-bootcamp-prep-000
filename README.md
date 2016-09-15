@@ -16,7 +16,7 @@ You're probably pretty good at this right now — good luck!
 
 ## A Hint About `()`
 
-Remember the purpose of using `()` to call functions in JavaScript. It essentially tells our code to *execute* the function. A function called without a `()`, like simply `functionName`, will return the function but NOT run it. You'll see the return value as `[Function: functionName]`.
+Remember the purpose of using `()` is to call functions in JavaScript. It essentially tells our code to *execute* the function. A function called without a `()`, like simply `functionName`, will return the function but NOT run it. You'll see the return value as `[Function: functionName]`.
 
 To get our code to execute that function, we instead call `functionName()`, which executes the code within that function.
 
@@ -28,3 +28,5 @@ We can make the function execute by saying this:
 ## Resources
 
 - [MDN: Scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/javascript-fix-the-scope-lab'>Fix The Scope Lab</a> on Learn.co and start learning to code for free.</p>
