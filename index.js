@@ -1,8 +1,11 @@
 var animal = 'dog'
 
 function myAnimal() {
+  var animal = 'dog'
   return animal
 }
+
+var animal = 'cat';
 
 function yourAnimal() {
   // How can we make sure that this function
@@ -12,10 +15,8 @@ function yourAnimal() {
 }
 
 function add2(n) {
-  return n + two
-
-  // Feel free to move things around!
-  const two = 2
+  return n + 2;
+    // Feel free to move things around!
 }
 
 var funkyFunction = function() {
@@ -25,4 +26,5 @@ var funkyFunction = function() {
 }
 
 // We want this to return a function that returns "FUNKY!" -- how can we accomplish that?
-var theFunk = funkyFunction
+var theFunk = funkyFunction()();
+theFunk;
