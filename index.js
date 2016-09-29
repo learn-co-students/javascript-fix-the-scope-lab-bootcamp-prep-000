@@ -9,6 +9,7 @@ function yourAnimal() {
   // How can we make sure that this function
   // and the above function both pass?
   // P.S.: You can't just hard-code 'cat' below
+var animal = 'cat'
   return animal
 }
 
@@ -22,8 +23,10 @@ function add2(n) {
 var funkyFunction = function() {
   return function() {
     return "FUNKY!"
-  return function() {
-    return "FUNKY!"
+  function funkyFunction() {
+    var hiddenFunk = 'FUNKY!'
+  return function innerFunk() {
+    return hiddenFunk
   }
 }
 // We want this to return a function that returns "FUNKY!" -- how can we accomplish that?
