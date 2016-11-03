@@ -17,7 +17,7 @@ const two = 2
 
 }
 
-function funkyFunction() {
+var  funkyFunction = function() {
 
   return function inner() {
     return "FUNKY!"
