@@ -19,20 +19,20 @@ describe('Fix the Scope', function() {
 
   describe('add2(n)', function() {
     it('adds two to n', function() {
-      const n = Math.floor(Math.random() * 1000)
-      expect(window.add2(n)).toEqual(n + 2)
+      const n = Math.floor(Math.random() * 1000);
+      expect(window.add2(n)).toEqual(n + 2);
     })
   })
 
   describe('funkyFunction()', function() {
     it('returns a function', function() {
-      expect(typeof window.funkyFunction()).toEqual('function')
+      expect(typeof window.funkyFunction()).toEqual('function');
     })
   })
 
   describe('theFunk', function() {
     it('is "FUNKY!"', function() {
-      expect(window.theFunk).toEqual('FUNKY!')
+      expect(window.theFunk).toEqual('FUNKY!');
     })
   })
 
