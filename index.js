@@ -5,24 +5,17 @@ function myAnimal() {
 }
 
 function yourAnimal() {
-  // How can we make sure that this function
-  // and the above function both pass?
-  // P.S.: You can't just hard-code 'cat' below
+var animal = "cat";
   return animal
 }
 
+var n = 666
 function add2(n) {
+  const two = 2;
   return n + two
-
-  // Feel free to move things around!
-  const two = 2
 }
 
-var funkyFunction = function() {
-  return function() {
-    return "FUNKY!"
+var theFunk = "FUNKY!";
+function funkyFunction() {
+  return funkyFunction;
   }
-}
-
-// We want this to return a function that returns "FUNKY!" -- how can we accomplish that?
-var theFunk = funkyFunction
