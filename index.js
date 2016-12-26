@@ -22,7 +22,7 @@ function add2(n) {
 
 var word = "FUNKY!"
 
-var funkyFunction = function() {
+var funkyFunction = function{
     return function(){
       return word
     }
