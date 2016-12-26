@@ -18,11 +18,11 @@ function add2(n) {
 }
 
 var funkyFunction = function() {
-  funkResult = "FUNKY!";
+  var funkResult = "FUNKY!";
   return function() {
     return funkResult;
   }
 }
 
 // We want this to return a function that returns "FUNKY!" -- how can we accomplish that?
-var theFunk = funkyFunction();
+var theFunk = funkyFunction()();
