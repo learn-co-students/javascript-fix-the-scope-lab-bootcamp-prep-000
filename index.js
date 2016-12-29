@@ -33,5 +33,5 @@ var funkyFunction = function() {
 
 // We want this to return a function that returns "FUNKY!" -- how can we accomplish that?
 // Adding '()' calls/excutes a function. Adding another '()' afterwards calls a function
-// within a function, since var funkyFunction = a function that returns another function
+// within a function (nested function), since var funkyFunction = a function that returns another function
 var theFunk = funkyFunction()()
