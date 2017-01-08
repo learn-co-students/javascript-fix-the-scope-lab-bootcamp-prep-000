@@ -1,3 +1,4 @@
+
 var animal = 'dog'
 
 function myAnimal() {
@@ -5,6 +6,8 @@ function myAnimal() {
 }
 
 function yourAnimal() {
+  var animal='cat'; //i thought i couldn't hard code 'cat' anywhere in the function,
+                    //but i just can't hard code 'return cat' ...duh
   // How can we make sure that this function
   // and the above function both pass?
   // P.S.: You can't just hard-code 'cat' below
@@ -12,10 +15,11 @@ function yourAnimal() {
 }
 
 function add2(n) {
+  const two = 2
   return n + two
 
   // Feel free to move things around!
-  const two = 2
+
 }
 
 var funkyFunction = function() {
@@ -25,4 +29,4 @@ var funkyFunction = function() {
 }
 
 // We want this to return a function that returns "FUNKY!" -- how can we accomplish that?
-var theFunk = funkyFunction
+var theFunk = funkyFunction()();
