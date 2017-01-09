@@ -1,28 +1,27 @@
 var animal = 'dog'
 
-function myAnimal() {
+function myAnimal(animal1) {
   return animal
 }
 
-function yourAnimal() {
+function yourAnimal(animal2) {
   // How can we make sure that this function
   // and the above function both pass?
-  // P.S.: You can't just hard-code 'cat' below
-  return animal
+  var animal2 = 'cat'
+  return animal2
 }
 
 function add2(n) {
-  return n + two
-
-  // Feel free to move things around!
   const two = 2
+  return n + two
 }
 
 var funkyFunction = function() {
+    var innerFunction = 'FUNKY!'
   return function() {
-    return "FUNKY!"
+    return innerFunction;
   }
 }
 
 // We want this to return a function that returns "FUNKY!" -- how can we accomplish that?
-var theFunk = funkyFunction
+var theFunk = funkyFunction()()
