@@ -23,8 +23,8 @@ const two = 2
 var funkyFunction = function() {
   return function() {
     return "FUNKY!"
-  }
-}
 
-// We want this to return a function that returns "FUNKY!" -- how can we accomplish that?
-var theFunk = function()
+  }
+
+}
+var theFunk = funkyFunction()()
