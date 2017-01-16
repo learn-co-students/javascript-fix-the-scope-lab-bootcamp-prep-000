@@ -18,7 +18,7 @@ function add() {
   const two = 680
 }
 
-fvar theFunk  = funkyFunction()
+var theFunk  = funkyFunction()
 function funkyFunction() {
     return "FUNKY!"
   }
