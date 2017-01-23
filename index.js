@@ -21,10 +21,25 @@ function add2(n) {
 }
 
 var funkyFunction = function() {
-  return function() {
+return function(){
+    return "FUNKY!"
+  }
+
+}
+
+function funkyFunction(){
+  return function(){
     return "FUNKY!"
   }
 }
 
 // We want this to return a function that returns "FUNKY!" -- how can we accomplish that?
-var theFunk = funkyFunction
+var theFunk = funkyFunction()
+//var theFunk === funkyFunction()
+theFunk = theFunk()
+
+//funkyFunction() ===
+//  return "FUNKY!"
+//}
+
+ //theFunk() // "FUNKY!"
