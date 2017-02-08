@@ -32,3 +32,8 @@ var theFunk = funkyFunction()//declare theFunk as funkyFunction
 theFunk = theFunk();//reassign value as within function
 
 //I can't believe that kind of self-referrential reassignemnet worked. Check with solution
+/** Solution uses double paranthesis to reference inner function:
+
+var theFunk = funkyFunction()()
+
+Use in future for shorter step **/
