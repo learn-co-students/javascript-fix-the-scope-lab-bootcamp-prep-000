@@ -7,7 +7,7 @@ describe('Fix the Scope', function() {
     })
   })
 
-  describe('yourAnimal()', function() {
+  describe('yourAnimal', function() {
     it('returns your animal', function(){
       expect(window.yourAnimal()).toEqual('cat')
     })
