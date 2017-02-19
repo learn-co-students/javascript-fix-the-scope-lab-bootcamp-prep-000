@@ -1,29 +1,30 @@
-var animal = 'dog'
+var animal = 'dog';
 
-function myAnimal() {
-  return animal
+// Feel free to move things around!
+const two = 2;
+
+var myAnimal = function() {
+  return animal;
 }
 
-function yourAnimal() {
+var yourAnimal = function() {
   // How can we make sure that this function
   // and the above function both pass?
   // P.S.: You can't just hard-code 'cat' below
-  return animal
+  animal = 'cat';
+  return animal;
 }
 
-function add2(n) {
-  return n + two
-
-  // Feel free to move things around!
-  const two = 2
+var add2 = function(n) {
+  return n + two;
 }
 
 var funkyFunction = function() {
   return function() {
-    return "FUNKY!"
+    return "FUNKY!";
   }
 }
 
 // We want 'funkyFunction' on the line below to return a function that returns "FUNKY!" -- how can we accomplish that?
 // NOTE: To pass this final test, you only need to modify the code below this line.
-var theFunk = funkyFunction
+var theFunk = funkyFunction()();
