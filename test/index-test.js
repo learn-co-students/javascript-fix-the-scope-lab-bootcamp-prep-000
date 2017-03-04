@@ -3,17 +3,17 @@
 describe('Fix the Scope', function() {
   describe('myAnimal()', function() {
     it('returns my animal', () => {
-      expect(window.myAnimal()).toEqual('dog')
+      expect(myAnimal()).toEqual('dog')
     })
   })
 
   describe('yourAnimal()', function() {
     it('returns your animal', function(){
-      expect(window.yourAnimal()).toEqual('cat')
+      expect(yourAnimal()).toEqual('cat')
     })
 
     it('does not hard-code the answer', function() {
-      expect(window.yourAnimal.toString()).toNotContain("return 'cat'")
+      expect(yourAnimal.toString()).toNotContain("return 'cat'")
     })
   })
 
