@@ -22,13 +22,10 @@ function add2(n) {
 
 var funkyFunction = function() {
   return function() {
-    return "FUNKY!";
+    return 'FUNKY!';
   }
 }
 
 // We want 'funkyFunction' on the line below to return a function that returns "FUNKY!" -- how can we accomplish that?
 // NOTE: To pass this final test, you only need to modify the code below this line.
-var funkyFunction = theFunk(function()) {
-  return 'FUNKY!';
-
-}
+var theFunk = funkyFunction()()
