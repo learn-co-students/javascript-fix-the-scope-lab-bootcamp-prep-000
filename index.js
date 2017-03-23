@@ -24,8 +24,4 @@ var funkyFunction = function() {
   }
 }
 
-var theFunk = funkyFunction();
-
-theFunk = theFunk();
-
-// It does not seem like this could possibly be the desired solution, but…?
+var theFunk = funkyFunction()();
