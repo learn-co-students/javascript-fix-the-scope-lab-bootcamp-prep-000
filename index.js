@@ -19,7 +19,6 @@ function add2(n) {
   // Feel free to move things around!
 //  const two = 2
 }
-
 var funkyFunction = function() {
   return function() {
     return "FUNKY!"
