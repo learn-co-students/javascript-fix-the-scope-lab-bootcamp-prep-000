@@ -27,5 +27,4 @@ function funkyFunction() {
 }
 
 // We want this to return a function that returns "FUNKY!" -- how can we accomplish that?
-var theFunk = funkyFunction();
-theFunk();
+var theFunk = funkyFunction()();
