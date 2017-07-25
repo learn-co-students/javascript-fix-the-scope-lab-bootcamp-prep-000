@@ -1,5 +1,9 @@
 var animal = 'dog'
 
+function FixtheScope() {
+  return animal
+}
+
 function myAnimal() {
   return animal
 }
