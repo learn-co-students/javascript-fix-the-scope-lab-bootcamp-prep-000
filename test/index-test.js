@@ -1,6 +1,6 @@
 /*global describe, it */
 
-describe('Fix the Scope', function() {
+describe('FixtheScope', function() {
   describe('myAnimal()', function() {
     it('returns my animal', () => {
       expect(window.myAnimal()).toEqual('dog')
