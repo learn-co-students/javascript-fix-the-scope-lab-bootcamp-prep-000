@@ -1,13 +1,14 @@
 
 
 function myAnimal() {
-  var animal = 'dog'
+  let animal = 'dog'
   return animal
 }
 
+var animal = 'cat'
 
 function yourAnimal() {
-  var animal = 'cat'
+  
   // How can we make sure that this function
   // and the above function both pass?
   // P.S.: You can't just hard-code 'cat' below
@@ -31,4 +32,4 @@ var funkyFunction = function() {
 // We want 'funkyFunction' on the line below to return a function that returns "FUNKY!" -- how can we accomplish that?
   // OTE: To pass this final test, you only need to modify the code below this line
 var theFunk = funkyFunction()
-funkyFunction;
+theFunk()()
