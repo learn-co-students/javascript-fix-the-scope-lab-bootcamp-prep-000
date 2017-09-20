@@ -29,4 +29,6 @@ var funkyFunction = function() {
 // We want to set theFunk equal to "FUNKY!" using our funkyFunction.
 // NOTE: you only need to modify the code below this line.
 
- var theFunk = "FUNKY!"
+ // var theFunk = "FUNKY!" will pass but better the assignement below
+
+var theFunk = funkyFunction()() // call the function and its inner function to access to "FUNKY!"
