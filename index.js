@@ -1,26 +1,27 @@
 
-function fixTheScope(){
+  var animal = 'dog'
+
   function myAnimal(){
-    var myAnimal = 'dog';
-  console.log(myAnimal);
+return animal
   }
-}
+
 
 function yourAnimal(){
   var animal = 'cat';
-  console.log(animal);
+return animal
 }
 
 function add2(n){
-  var = (n+2);
-  console.log(n);
+  const two = 2
+  return n + two
 }
 
-function funkyFunction(){
-  console.log(function);
+var funkyFunction = function (){
+  return function (){
+    return "FUNKY!"
+  }
 }
 
-function theFunk(){
-  var theFunk = funkyFunction()
-  console.log('FUNKY!');
-}
+
+  var theFunk = funkyFunction()()
+  
