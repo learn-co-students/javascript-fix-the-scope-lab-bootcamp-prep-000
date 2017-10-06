@@ -1,21 +1,22 @@
-var animal = 'dog'
+var animal = 'dog';
 
 function myAnimal() {
-  return animal
+  return animal;
 }
-
+var pet= "cat";
 function yourAnimal() {
   // How can we make sure that this function
   // and the above function both pass?
   // P.S.: You can't just hard-code 'cat' below
-  return animal
+  var animal= this.pet;
+  return animal;
 }
-
+const two = 2;
 function add2(n) {
-  return n + two
+  return n + two;
 
   // Feel free to move things around!
-  const two = 2
+
 }
 
 var funkyFunction = function() {
@@ -24,6 +25,6 @@ var funkyFunction = function() {
   }
 }
 
-// We want to set theFunk equal to "FUNKY!" using our funkyFunction.
-// NOTE: you only need to modify the code below this line.
-var theFunk = funkyFunction
+// We want this to return a function that returns "FUNKY!" -- how can we accomplish that?
+var dar=  funkyFunction();
+var theFunk = dar();
