@@ -34,6 +34,6 @@ var theFunk = (funkyFunction())();
 /*My Note:
 See Line 24. funkyFunction is a variable.
 Invoking as funkyFunction() would return the inside function.
-To get "FUNKY" returned, we need to invoke the indide function
+To get "FUNKY" returned, we need to invoke the inside function
 ie (funkyFunction())()
 */
