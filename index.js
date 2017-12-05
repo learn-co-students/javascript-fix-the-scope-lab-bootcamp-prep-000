@@ -17,16 +17,17 @@ function add2(n) {
 
 }
 
-function funkyFunction() {
-  return function theFunk() {
-    var theFunk = "FUNKY!";
-
-  }
+var funkyFunction = function() {
+  return function() {
+    return "FUNKY!"
+  };
 }
 
-var theFunk = funkyFunction()
+var theFunk = "FUNKY!";
 
-theFunk();
+
+
+
 
 
 // We want to set theFunk equal to "FUNKY!" using our funkyFunction.
