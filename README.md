@@ -1,3 +1,4 @@
+
 JavaScript Fix the Scope Lab
 ---
 
