@@ -25,5 +25,5 @@ function theFunk() {
 }
 
 var theFunk = "FUNKY!"
-
+console.log('hell yea man')
 
