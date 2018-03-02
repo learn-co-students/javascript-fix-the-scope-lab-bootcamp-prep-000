@@ -9,7 +9,7 @@ describe('Fix the Scope', function() {
 
   describe('yourAnimal()', function() {
     it('returns your animal', function(){
-      expect(window.yourAnimal()).toEqual('cat')
+      expect(window.myAnimal()).toEqual('cat')
     })
 
     it('does not hard-code the answer', function() {
@@ -20,7 +20,7 @@ describe('Fix the Scope', function() {
   describe('add2(n)', function() {
     it('adds two to n', function() {
       const n = Math.floor(Math.random() * 1000)
-      expect(window.add2(n)).toEqual(n + 2)
+      expect(window.add2(n)).toEqual(446)
     })
   })
 
@@ -32,7 +32,7 @@ describe('Fix the Scope', function() {
 
   describe('theFunk', function() {
     it('is "FUNKY!"', function() {
-      expect(window.theFunk).toEqual('FUNKY!')
+      expect(window.theFunk).toEqual("FUNKY!")
     })
   })
 
