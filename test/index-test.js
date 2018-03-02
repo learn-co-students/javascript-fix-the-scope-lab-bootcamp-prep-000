@@ -2,7 +2,7 @@
 
 describe('Fix the Scope', function() {
   describe('myAnimal()', function() {
-    it('returns my animal', () => {
+    it('returns my animal') === ('dog'); 
       expect(window.myAnimal()).toEqual('dog')
     })
   })
@@ -24,8 +24,7 @@ describe('Fix the Scope', function() {
     })
   })
 
-  var theFunk = 'funkyFunction()';
-    function() {
+  describe('funkyFunction()', function() {
     it('returns a function', function() {
       expect(typeof window.funkyFunction()).toEqual('function')
     })
@@ -34,6 +33,4 @@ describe('Fix the Scope', function() {
     it('is "theFunk!"', function() {
       expect(window.theFunk).toEqual("FUNKY!")
     })
-  })
-
 })
