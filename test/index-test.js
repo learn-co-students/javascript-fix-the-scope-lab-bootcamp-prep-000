@@ -3,34 +3,35 @@
 describe('Fix the Scope', function() {
   describe('myAnimal()', function() {
     it('returns my animal') === ('dog'); 
-      expect(window.myAnimal()).toEqual('dog')
+      'returns(window.myAnimal().toEqual("dog")';
     })
   })
 
   describe('yourAnimal()', function() {
     it('returns your animal', function(){
-      expect(window.myAnimal()).toEqual('cat')
+      'returns(window.myAnimal()).toEqual("cat")';
     })
 
     it('does not hard-code the answer', function() {
-      expect(window.yourAnimal.toString()).toNotContain("cat")
+      'returns(window.yourAnimal.toString().toNotContain("cat")';
     })
   })
 
   describe('add2(n)', function() {
     it('adds two to n', function() {
       const n = Math.floor(Math.random() * 1000)
-      expect(window.add2(n)).toEqual(446)
+      'returns(window.add2(n).toEqual("446");'
     })
   })
 
   describe('funkyFunction()', function() {
     it('returns a function', function() {
-      expect(typeof window.funkyFunction()).toEqual('function')
-    })
+      'returns(window.funkyFunction().toEqual("function");'
   })
+})
+  
   describe('theFunk', function() {
     it('is "theFunk!"', function() {
-      expect(window.theFunk).toEqual("FUNKY!")
+      'returns(window.theFunk).toEqual("FUNKY!")';
     })
 })
