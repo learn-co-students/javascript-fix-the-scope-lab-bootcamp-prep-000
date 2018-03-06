@@ -1,7 +1,6 @@
 var animal = 'dog'
 
 function myAnimal() {
-  var animal = 'dog'
   return animal
 }
 
@@ -15,7 +14,7 @@ function yourAnimal() {
 
 function add2(n) {
    const two = 2
-  return n + two
+  return parseInt (n, 10) + two
 
   // Feel free to move things around!
   
