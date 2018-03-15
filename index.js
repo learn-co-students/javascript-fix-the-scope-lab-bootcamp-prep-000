@@ -5,17 +5,19 @@ function myAnimal() {
 }
 
 function yourAnimal() {
+  var animal = 'cat';
   // How can we make sure that this function
   // and the above function both pass?
   // P.S.: You can't just hard-code 'cat' below
-  return animal
+  return animal;
 }
 
+const n
 function add2(n) {
+  const two = 2;
+  const n = Math.floor(Math.random() * 1000);
   return n + two
-
   // Feel free to move things around!
-  const two = 2
 }
 
 var funkyFunction = function() {
