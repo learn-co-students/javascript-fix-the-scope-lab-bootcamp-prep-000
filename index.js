@@ -11,16 +11,18 @@ function yourAnimal() {
   return animal
 }
 
-function add2(n) {
+function add2(n) 
+{
   return n + two
-
   // Feel free to move things around!
   const two = 2
 }
 
-var funkyFunction = function() {
-  return function() {
-    return "FUNKY!"
+var funkyFunction = function() 
+{
+  return function() 
+  {
+  return "FUNKY!"
   }
 }
 
