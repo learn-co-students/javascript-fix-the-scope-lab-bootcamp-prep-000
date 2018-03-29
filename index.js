@@ -3,7 +3,7 @@ var animal = 'dog';
 function myAnimal() {
   return animal;
 }
-myAnimal();
+
 
 function yourAnimal() {
   // How can we make sure that this function
@@ -12,7 +12,7 @@ function yourAnimal() {
   var animal = "cat";
   return animal;
 }
-yourAnimal();
+
 
 function add2(n) {
   
@@ -22,7 +22,7 @@ function add2(n) {
   
   return n + two;
 }
- add2(n);
+
 
 
 var funkyFunction = function() {
