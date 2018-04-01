@@ -21,10 +21,17 @@ function add2(n) {
 }
 
 var funkyFunction = function() {
+<<<<<<< HEAD
   return function() {
     return "FUNKY!";
   }
+=======
+  return function theFunk() {
+    return 
+>>>>>>> 5a6eecf551004feceb8285d0a226fb2afb6cac25
 }
+}
+
 
 var theFunk = funkyFunction()();
 
