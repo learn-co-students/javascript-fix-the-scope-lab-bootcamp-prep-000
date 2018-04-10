@@ -28,5 +28,5 @@ var funkyFunction = function() {
 // We want to set theFunk equal to "FUNKY!" using our funkyFunction.
 // NOTE: you only need to modify the code below this line.
 var theFunk = funkyFunction()
-//var theFunk becomes a function, then redefine var as theFunk() function to access inner function
+//var funkyFunction names the first function, then var theFunk names the next function inside funkyFunction(), setting theFunk equal to theFunk() then runs the inner function
 theFunk = theFunk()
