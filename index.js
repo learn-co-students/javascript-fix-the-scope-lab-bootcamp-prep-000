@@ -4,11 +4,11 @@ function myAnimal() {
   return animal
 }
 
-function yourAnimal() {
+function yourAnimal(animal) {
   // How can we make sure that this function
   // and the above function both pass?
   // P.S.: You can't just hard-code 'cat' below
-  var animal = 'cat'
+   return animal = 'cat'
 }
 
 function add2(n) {
@@ -20,13 +20,11 @@ return n + two
 
 var funkyFunction = function() {
   return function() {
-    return "FUNKY!"
+    return 'FUNKY!'
   }
 }
 
 // We want to set theFunk equal to "FUNKY!" using our funkyFunction.
 // NOTE: you only need to modify the code below this line.
-var theFunk = funkyFunction;
-function();
-theFunk();
 
+var theFunk = funkyFunction()()
