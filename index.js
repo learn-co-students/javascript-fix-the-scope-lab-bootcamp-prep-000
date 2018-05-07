@@ -35,3 +35,4 @@ var theFunk = tooFunky();
 
 /* So, here's how this works: First, call funkyFunction, which returns its inner function as its value. Then, by setting the variable tooFunky equal to that call to funkyFunction, tooFunky and funkyFunction's inner function are now one and the same. So, to get the string "FUNKY!" from that inner function, just call tooFunky, and set its return value ("FUNKY!") equal to theFunk. */
 // Another note: since () calls functions, I can use it twice to call an inner function. As in, according to the official solution, set var theFunk = funkyFunction()() .
+// Also, funkyFunction HAS to return function() {...}. I get an error if I omit "return".
