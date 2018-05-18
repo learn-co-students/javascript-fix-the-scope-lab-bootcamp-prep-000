@@ -15,7 +15,7 @@ function yourAnimal() {
 
 var myPet = yourAnimal();
 
-console.log(myPet());
+
 
 
 function add2(n) {
