@@ -3,7 +3,7 @@
 function myAnimal() {
   return animal
 }
-console.log(myAnimal());
+
 
 function yourAnimal() {
   var animal = 'cat';
