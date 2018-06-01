@@ -1,31 +1,36 @@
-var animal = 'dog'
+/** animal declared as a var and set to "dog" **/
+var animal = 'dog';
 
+/**
+ *  myAnimal returns the variable animal
+ */
 function myAnimal() {
-  return animal
+  return animal;
 }
 
+/**
+ *  yourAnimal changes the local version of animal to "cat" then returns it, leaving the global animal alone
+ **/
 function yourAnimal() {
-  // How can we make sure that this function
-  // and the above function both pass?
-  // P.S.: You can't just hard-code 'cat' below
-  animal = 'cat'
-  return animal
+  return animal = 'cat';
 }
 
+/**
+* add2 declares two and sets it to 2 then returns two plus the argument n
+**/
 function add2(n) {
-  const two = 2
-
-  return n + two
-  // Feel free to move things around!
+  const two = 2;
+  return n + two;
 }
 
+/**
+* funkyFunction returns a nested function "function" which returns the string "FUNKY!"
+**/
 var funkyFunction = function() {
   return function() {
-    return "FUNKY!"
+    return "FUNKY!";
   }
 }
 
-// We want to set theFunk equal to "FUNKY!" using our funkyFunction.
-// NOTE: you only need to modify the code below this line.
-
-var theFunk = funkyFunction()()
+/** theFunk is declared and assigned to the function call of the function within funkyFunction **/
+var theFunk = funkyFunction()();
