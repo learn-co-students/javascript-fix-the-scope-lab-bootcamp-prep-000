@@ -26,29 +26,20 @@ describe('Fix the Scope', function() {
     })
   })
 
-<<<<<<< HEAD
+
   describe('funkyFunction()', function() {
     it('returns a function', function() {
       expect(typeof window.funkyFunction()).toEqual('function')
     })
-=======
-describe('funkyFunction()', function() {
-  it('returns a function', function() {
-    expect(typeof funkyFunction()).toEqual('function')
->>>>>>> Fix solution
+
   })
 
-<<<<<<< HEAD
+
   describe('theFunk', function() {
     it('is "FUNKY!"', function() {
       expect(window.theFunk).toEqual('FUNKY!')
     })
   })
 
-=======
-describe('theFunk', function() {
-  it('is "FUNKY!"', function() {
-    expect(theFunk).toEqual('FUNKY!')
-  })
->>>>>>> Fix solution
+
 })
