@@ -1,6 +1,6 @@
 function myAnimal() {
   var myAnimal = "dog";
-  return myAnimal;  
+  return myAnimal;
 }
 
 function yourAnimal() {
@@ -18,3 +18,7 @@ function funkyFunction() {
 }
 
 var theFunk = "FUNKY!";
+
+function theFunk() {
+  return theFunk;
+}
