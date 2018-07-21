@@ -10,7 +10,7 @@ before(function(done) {
     presets: ['es2015']
   });
 
-  const html = path.resolve(__dirname, '..', 'index.html');
+  const html = path.resolve(__dirname, '..', 'index.html')
 
   jsdom.env(html, [], {
     src: babelResult.code,
@@ -22,6 +22,6 @@ before(function(done) {
 
     global.window = window;
 
-    return done();
+    return done(err);
   });
 });
