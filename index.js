@@ -1,6 +1,10 @@
 var animal = 'cat'
 function myAnimal() {
+<<<<<<< HEAD
   var animal = 'dog'
+=======
+  
+>>>>>>> 7de73c31c35686c6b72c2af3bd92339fd4aabb46
   return animal
 }
 
@@ -26,4 +30,4 @@ var funkyFunction = function() {
 
 // We want to set theFunk equal to "FUNKY!" using our funkyFunction.
 // NOTE: you only need to modify the code below this line.
-var theFunk = "FUNKY!"
+var theFunk = function()
