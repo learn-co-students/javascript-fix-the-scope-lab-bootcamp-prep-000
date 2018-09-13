@@ -30,7 +30,13 @@ var funkyFunction = function() {
 // NOTE: you only need to modify the code below this line.
 
 // Jeff says:
-// This works in other code sandboxes. Why am I still getting an error?
+// This works in other code sandboxes. Why does it produce an error here?
+// var theFunk = funkyFunction();
+
+// Jeff says:
+// The following was an accident, yet I found that it passes its test.
+// The following code produces and error in other code sandboxes.
 var theFunk = funkyFunction()();
+// What's going on?
 
 //
