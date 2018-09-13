@@ -31,6 +31,6 @@ var funkyFunction = function() {
 
 // Jeff says:
 // This works in other code sandboxes. Why am I still getting an error?
-var theFunk = funkyFunction();
+var theFunk = funkyFunction()();
 
 //
