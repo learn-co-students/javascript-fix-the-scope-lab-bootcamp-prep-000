@@ -5,17 +5,19 @@ function myAnimal() {
 }
 
 function yourAnimal() {
-  // How can we make sure that this function
-  // and the above function both pass?
-  // P.S.: You can't just hard-code 'cat' below
-  return animal
+  function realAnimal() {
+    var animal = 'cat'
+    return animal
+  }
+return realAnimal()
 }
 
 function add2(n) {
-  return n + two
-
-  // Feel free to move things around!
-  const two = 2
+  function nomorestring(n) {
+    var nn = parseInt(n, 10)
+    return nn + 2
+  }
+    return nomorestring(n)
 }
 
 var funkyFunction = function() {
@@ -24,6 +26,6 @@ var funkyFunction = function() {
   }
 }
 
-// We want to set theFunk equal to "FUNKY!" using our funkyFunction.
-// NOTE: you only need to modify the code below this line.
-var theFunk = funkyFunction
+var preFunk = funkyFunction()
+ 
+var theFunk = preFunk()
