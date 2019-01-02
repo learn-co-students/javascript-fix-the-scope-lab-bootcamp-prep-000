@@ -1,14 +1,15 @@
-var animal = 'dog'
+var animal = 'dog';
 
 function myAnimal() {
   return animal
 }
 
+var getCat = function() {
+  animal = 'cat'
+}
+
 function yourAnimal() {
-  // How can we make sure that this function
-  // and the above function both pass?
-  // P.S.: You can't just hard-code 'cat' below
-  return animal
+  getCat();
 }
 
 function add2(n) {
