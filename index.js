@@ -1,29 +1,41 @@
-var animal = 'dog'
+var animal = 'dog';
 
 function myAnimal() {
-  return animal
+  var animal = 'dog';
+  return animal;
 }
+
+myAnimal();
 
 function yourAnimal() {
-  // How can we make sure that this function
-  // and the above function both pass?
-  // P.S.: You can't just hard-code 'cat' below
-  return animal
+  var animal = 'cat';
+  return animal;
 }
+
+yourAnimal();
+
+var n;
 
 function add2(n) {
-  return n + two
-
-  // Feel free to move things around!
-  const two = 2
+  var two = 2;
+  return n + two;
 }
+
+add2(n);
+/*Remember the purpose of using () is to call functions in JavaScript. It essentially tells our code to execute the function. A function called without a (), like simply functionName, will return the function but NOT run it. You'll see the return value as [Function: functionName].
+To get our code to execute that function, we instead call functionName(), which executes the code within that function.
+As an example, the third test here at first returns: Error: Expected [Function: funkyFunction] to equal 'FUNKY!'
+We can make the function execute by saying this:
+var theFunk = funkyFunction() But this returns ANOTHER FUNCTION! How would we tell that function to execute to return the string within it?*/
 
 var funkyFunction = function() {
   return function() {
-    return "FUNKY!"
-  }
-}
+    return "FUNKY!";
+  };
+};
 
-// We want to set theFunk equal to "FUNKY!" using our funkyFunction.
-// NOTE: you only need to modify the code below this line.
-var theFunk = funkyFunction
+var theFunk = funkyFunction()();
+
+theFunk;
+
+
