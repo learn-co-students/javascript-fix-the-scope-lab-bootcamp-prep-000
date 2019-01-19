@@ -1,4 +1,4 @@
-# Learn.co Educational Content License
+;# Learn.co Educational Content License
 
 Copyright (c) 2016 Flatiron School, Inc
 
