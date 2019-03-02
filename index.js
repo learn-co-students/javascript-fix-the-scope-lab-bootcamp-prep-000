@@ -1,22 +1,22 @@
-var animal = 'dog'
+var animal = 'dog';
 
 function myAnimal() {
-  return animal
+  return animal;
 }
 
 function yourAnimal() {
-  animal = 'cat'
-  return animal
+  animal = 'cat';
+  return animal;
 }
 
 function add2(n) {
-  const two = 2
-  return n + two
+  const two = 2;
+  return n + two;
 }
 
 var funkyFunction = function() {
   return function() {
-    return "FUNKY!"
-  }
-}
-var theFunk = funkyFunction()()
+    return "FUNKY!";
+  };
+};
+var theFunk = funkyFunction()();
