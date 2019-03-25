@@ -25,4 +25,4 @@ var funkyFunction = function() {
 
 // We want to set theFunk equal to "FUNKY!" using our funkyFunction.
 // NOTE: you only need to modify the code below this line.
-var theFunk = funkyFunction()()
+var theFunk = funkyFunction()() //call the first function "funkyFunction()" then call the second unnamed function using "()". Initially I set the second parns to equal "FUNK!", which was wrong.lazy(me)
