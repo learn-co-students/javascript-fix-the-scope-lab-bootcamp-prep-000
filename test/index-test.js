@@ -1,4 +1,4 @@
-escribe('Fix the Scope', function() {
+describe('Fix the Scope', function() {
   describe('myAnimal()', function() {
     it('returns my animal', () => {
       expect(myAnimal()).toEqual('dog')
