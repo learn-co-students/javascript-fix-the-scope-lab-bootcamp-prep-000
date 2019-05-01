@@ -37,6 +37,6 @@ escribe('Fix the Scope', function() {
     it('is "FUNKY!"', function() {
       expect(theFunk).toEqual('FUNKY!')
       expect(window.theFunk).toEqual('FUNKY!')
-    })
-  })
-
+    });
+  });
+});
