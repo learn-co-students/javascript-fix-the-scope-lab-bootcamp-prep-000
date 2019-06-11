@@ -26,6 +26,4 @@ var funkyFunction = function() {
 
 // We want to set theFunk equal to "FUNKY!" using our funkyFunction.
 // NOTE: you only need to modify the code below this line.
-var theFunk = funkyFunction()
-theFunk()
-// tried this code in my terminal and Repl.it and I get "FUNKY!" so not sure why it doesnt pass
+var theFunk = funkyFunction()()
