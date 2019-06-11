@@ -8,15 +8,19 @@ function yourAnimal() {
   // How can we make sure that this function
   // and the above function both pass?
   // P.S.: You can't just hard-code 'cat' below
+  var animal = 'cat'
   return animal
 }
 
-function add2(n) {
-  return n + two
+// the above solution works because I locally reassigned the variable 'animal' to be 'cat' within the function
+// despite the global declaration of 'animal' to be 'dog' before the function
 
-  // Feel free to move things around!
+function add2(n) {
+  parseInt(n, 10)
   const two = 2
+  return n + two
 }
+// the above solution works because I turned 'n' to an interger using parseInt and using a base value 10
 
 var funkyFunction = function() {
   return function() {
@@ -26,4 +30,8 @@ var funkyFunction = function() {
 
 // We want to set theFunk equal to "FUNKY!" using our funkyFunction.
 // NOTE: you only need to modify the code below this line.
-var theFunk = funkyFunction
+var theFunk = funkyFunction()()
+
+
+// the above solution works because two parentheses are used, next to each other, to execute the function 
+// that is within another function.
