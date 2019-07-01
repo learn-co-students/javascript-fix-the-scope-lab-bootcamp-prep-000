@@ -26,23 +26,13 @@ add2(n)
 
 function funkyFunction() {
   return function() {
+    return "FUNKY!";
   }
 }
 
 // We want to set theFunk equal to "FUNKY!" using our funkyFunction.
 // NOTE: you only need to modify the code below this line.
 
-  // describe('theFunk', function() {
-  //   it('is "FUNKY!"', function() {
-  //     expect(window.theFunk).toEqual('FUNKY!')
+var theFunk = funkyFunction ()();
 
-var theFunk = funkyFunction ();
-
-function funkyFunction() {
-  var beeno = "FUNKY!";
-  return function() {
-    return beeno;
-  }
-}
-
-theFunk();
+theFunk;
