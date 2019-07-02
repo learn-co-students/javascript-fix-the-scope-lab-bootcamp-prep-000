@@ -18,21 +18,16 @@ function add2(n) {
   return n + two;
 }
 
-add2(n)
-
-  // describe('funkyFunction()', function() {
-  //   it('returns a function', function() {
-  //     expect(typeof window.funkyFunction()).toEqual('function')
-
-function funkyFunction() {
-  return function() {
-    return "FUNKY!";
-  }
-}
+add2(2)
 
 // We want to set theFunk equal to "FUNKY!" using our funkyFunction.
 // NOTE: you only need to modify the code below this line.
 
-var theFunk = funkyFunction ()();
+function funkyFunction() {
+  var innerVariable = "FUNKY!"
+  return function innerScope() {
+    return innerVariable;
+  }
+}
 
-console.log(theFunk);
+var theFunk = funkyFunction()()
