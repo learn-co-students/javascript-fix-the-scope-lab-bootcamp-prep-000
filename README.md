@@ -1,4 +1,4 @@
-JavaScript Fix the Scope Lab
+vailable, I've been having some trouble solving the last part of this FJavaScript Fix the Scope Lab
 ---
 
 ## Objectives
