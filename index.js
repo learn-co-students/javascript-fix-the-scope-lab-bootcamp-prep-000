@@ -1,29 +1,32 @@
 var animal = 'dog'
 
 function myAnimal() {
-  return animal
+  return animal;
 }
 
 function yourAnimal() {
+  var animal = "cat";
   // How can we make sure that this function
   // and the above function both pass?
   // P.S.: You can't just hard-code 'cat' below
   return animal
 }
+yourAnimal();
 
 function add2(n) {
-  return n + two
+  const two = 2
+  return n + two;
 
   // Feel free to move things around!
-  const two = 2
+
 }
 
-var funkyFunction = function() {
-  return function() {
+var funkyFunction= function () {
+  return function () {
     return "FUNKY!"
   }
 }
 
-// We want to set theFunk equal to "FUNKY!" using our funkyFunction.
-// NOTE: you only need to modify the code below this line.
-var theFunk = funkyFunction
+var theFunk = funkyFunction()(); 
+
+//to make this work you need to call the function twice, because if you use just 1 () it will return another function, so you need to call that one to be able to get "FUNKY"!
