@@ -31,5 +31,5 @@ function funkyFunction() {
       return subFunction;
 }
 
-var theFunk = funkyFunction();
-window.theFunk();
+var theFunk = funkyFunction()();
+window.theFunk
