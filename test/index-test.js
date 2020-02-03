@@ -2,8 +2,12 @@
 
 describe('Fix the Scope', function() {
   describe('myAnimal()', function() {
-    it('returns my animal', () => {
+    it('returns the animal variable', () => {
       expect(window.myAnimal()).toEqual('dog')
+    })
+
+    it('does not modify the  animal variable', () => {
+      expect(window.myAnimal.toString()).toNotContain("animal =")
     })
   })
 
@@ -13,7 +17,12 @@ describe('Fix the Scope', function() {
     })
 
     it('does not hard-code the answer', function() {
+      expect(window.yourAnimal.toString()).toContain("return animal")
       expect(window.yourAnimal.toString()).toNotContain("return 'cat'")
+    })
+
+    it('does not change the output of the myAnimal function', () => {
+      expect(window.myAnimal()).toEqual('dog')
     })
   })
 
