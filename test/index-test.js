@@ -1,39 +1,32 @@
-/*global describe, it */
+var animal = 'dog'
 
-describe('Fix the Scope', function() {
-  describe('myAnimal()', function() {
-    it('returns my animal', () => {
-      expect(window.myAnimal()).toEqual('dog')
-    })
-  })
+function myAnimal() {
+  // You should not need to modify this function
+  return animal
+}
 
-  describe('yourAnimal()', function() {
-    it('returns your animal', function(){
-      expect(window.yourAnimal()).toEqual('cat')
-    })
+function yourAnimal() {
+  // The tests expect this function to return `animal` just like the previous function
+  // However, you cannot simply modify the existing variable declared on line 1 in the global scope 
+  // How can we make sure that this function
+  // and the above function both pass?
+  // P.S.: Hard-coding 'cat' below will not work
+  return animal
+}
 
-    it('does not hard-code the answer', function() {
-      expect(window.yourAnimal.toString()).toNotContain("return 'cat'")
-    })
-  })
+function add2(n) {
+  return n + two
 
-  describe('add2(n)', function() {
-    it('adds two to n', function() {
-      const n = Math.floor(Math.random() * 1000)
-      expect(window.add2(n)).toEqual(n + 2)
-    })
-  })
+  // Feel free to move things around!
+  const two = 2
+}
 
-  describe('funkyFunction()', function() {
-    it('returns a function', function() {
-      expect(typeof window.funkyFunction()).toEqual('function')
-    })
-  })
+var funkyFunction = function() {
+  return function() {
+    return "FUNKY!"
+  }
+}
 
-  describe('theFunk', function() {
-    it('is "FUNKY!"', function() {
-      expect(window.theFunk).toEqual('FUNKY!')
-    })
-  })
-
-})
+// We want to set theFunk equal to "FUNKY!" using our funkyFunction.
+// NOTE: you only need to modify the code below this line.
+var theFunk = funkyFunction
