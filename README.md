@@ -25,6 +25,7 @@ As an example, the third test here at first returns: `Error: Expected [Function:
 We can make the function execute by saying this:
 `var theFunk = funkyFunction()` But this returns ANOTHER FUNCTION! How would we tell that function to execute to return the string within it?
 
+
 ## Resources
 
 - [MDN: Scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
