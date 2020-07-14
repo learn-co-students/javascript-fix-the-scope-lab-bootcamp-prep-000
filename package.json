@@ -4,7 +4,7 @@
   "description": "Practice with function scope in JavaScript on Learn.co",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R mocha-multi --reporter-options spec=-,json=.results.json"
+    "test": "mocha -R mocha-multi --timmeout 10000 --reporter-options spec=-,json=.results.json"
   },
   "repository": {
     "type": "git",
