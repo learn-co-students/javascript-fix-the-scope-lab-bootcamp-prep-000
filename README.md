@@ -81,7 +81,7 @@ greeting('Proffesor Falken')
 // => "Greetings Proffesor Falken"
 ```
 
-Notice in the above code, `outer()` is calle once, and its return value is
+Notice in the above code, `outer()` is called once, and its return value is
 assigned to the `greeting` variable. The return value _is_ the `inner` function
 definition. We never explicitly call `inner()` because its definition gets
 assigned to `greeting`. Instead, we call `greeting()`!
