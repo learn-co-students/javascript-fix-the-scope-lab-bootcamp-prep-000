@@ -89,5 +89,3 @@ assigned to `greeting`. Instead, we call `greeting()`!
 ## Resources
 
 - [MDN: Scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/javascript-fix-the-scope-lab'>Fix The Scope Lab</a> on Learn.co and start learning to code for free.</p>
