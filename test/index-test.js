@@ -29,9 +29,11 @@ describe('Fix the Scope', function() {
   describe('add2(n)', function() {
     it('adds two to n', function() {
       const n = Math.floor(Math.random() * 1000)
-      expect(window.add2(n)).toEqual(n + 2)
+            expect(window.add2(n)).toEqual(n + 2)
     })
   })
+
+
 
   describe('funkyFunction()', function() {
     it('returns a function', function() {
@@ -41,8 +43,7 @@ describe('Fix the Scope', function() {
 
   describe("the variable 'theFunk'", function() {
     it('is equal to "FUNKY!"', function() {
-      expect(window.theFunk).toEqual('FUNKY!')
+          expect(window.funkyFunction()).toEqual('FUNKY!')
     })
   })
-
 })
