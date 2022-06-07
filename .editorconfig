@@ -1,4 +1,5 @@
 root = true
+//test
 
 [*]
 end_of_line = lf
